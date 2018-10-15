@@ -33,4 +33,6 @@ python main.py --dataset=ml-1m --train_dir=default --maxlen=200 --dropout_rate=0
 
 The implemention of self attention is modified based on *[this](https://github.com/Kyubyong/transformer)*
 
-The convergence curve on `ml-1m`, compared with CNN/RNN based approaches: ![](curve.png =250x) 
+The convergence curve on `ml-1m`, compared with CNN/RNN based approaches:  
+
+<img src="curve.png" width="250">
