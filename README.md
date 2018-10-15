@@ -35,4 +35,4 @@ The implemention of self attention is modified based on *[this](https://github.c
 
 The convergence curve on `ml-1m`, compared with CNN/RNN based approaches:  
 
-<img src="curve.png" width="250">
+<img src="curve.png" width="400">
