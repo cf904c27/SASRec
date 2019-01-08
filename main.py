@@ -51,6 +51,7 @@ sess = tf.Session(config=config)
 sampler = WarpSampler(user_train, usernum, itemnum, batch_size=args.batch_size, maxlen=args.maxlen, n_workers=3)
 model = Model(usernum, itemnum, args)
 sess.run(tf.global_variables_initializer())
+print('RUN')
 
 T = 0.0
 t0 = time.time()
