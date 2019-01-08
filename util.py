@@ -124,7 +124,7 @@ def evaluate_valid(model, dataset, args, sess):
             NDCG += 1 / np.log2(rank + 2)
             HT += 1
         if valid_user % 100 == 0:
-            print '.',
-            sys.stdout.flush()
+            print ('.',
+            sys.stdout.flush())
 
     return NDCG / valid_user, HT / valid_user
