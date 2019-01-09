@@ -71,8 +71,10 @@ for epoch in range(1, args.num_epochs + 1):
         t_test = evaluate(model, dataset, args, sess)
         t_valid = evaluate_valid(model, dataset, args, sess)
         #print ''
-        print ('epoch:%d, time: %f(s), valid (NDCG@10: %.4f, HR@10: %.4f), test (NDCG@10: %.4f, HR@10: %.4f)' % (
-        epoch, T, t_valid[0], t_valid[1], t_test[0], t_test[1]))
+        #print ('epoch:%d, time: %f(s), valid (NDCG@10: %.4f, HR@10: %.4f), test (NDCG@10: %.4f, HR@10: %.4f)' % (
+        #epoch, T, t_valid[0], t_valid[1], t_test[0], t_test[1]))
+        
+        print('epoch:',epoch, 'time:',T)
 
         f.write(str(t_valid) + ' ' + str(t_test) + '\n')
         f.flush()
